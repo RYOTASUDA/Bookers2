@@ -1,0 +1,10 @@
+<h1>New book</h1>
+<%= form_with model: @post_image, local:true do |f| %>
+  <p>Title</p>
+  <%= f.text_field :shop_name %>
+  <p>Opinion</p>
+  <%= f.text_area :caption %>
+  <br><%= f.submit 'Create Book' %></br>
+<% end %>
+
+<h1>Books</h1>
